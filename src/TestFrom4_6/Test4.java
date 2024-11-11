@@ -1,15 +1,15 @@
-package Test4;
+package TestFrom4_6;
 import javax.swing.JFrame;
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-class FrameTest extends JFrame implements ActionListener{ //①实现接口
+class Test4 extends JFrame implements ActionListener{ //①实现接口
     private JButton jbt1 = new JButton("变红");
     private JButton jbt2 = new JButton("变蓝");
     private JButton jbt3 = new JButton("退出");
     private JPanel jpl = new JPanel();
-    public FrameTest(){
+    public Test4(){
         jbt1.addActionListener(this); //③发出方和处理方绑定
         jbt2.addActionListener(this);
         jbt3.addActionListener(this);
@@ -24,7 +24,7 @@ class FrameTest extends JFrame implements ActionListener{ //①实现接口
         else  System.exit(0);
     }
     public static void main (String[] args)  {
-        new FrameTest().setVisible(true);
+        new Test5().setVisible(true);
     }
 
 }
