@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class Printer1 implements ActionListener{
     public void actionPerformed(ActionEvent e){
-        System.out.println("Hello");
+        System.out.println("Visit Tianlang's github: https://github.com/Tianlang-create");
     }
 }
 class Test1_1 extends JFrame{
@@ -16,6 +16,8 @@ class Test1_1 extends JFrame{
         jbt.addActionListener(new Printer1());
         this.add(jpl);
         jpl.add(jbt);
+        jbt.setSize(100,100);
+        jpl.setSize(500,500);
         this.setSize(400,300);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
