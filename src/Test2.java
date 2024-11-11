@@ -3,6 +3,7 @@ class Printer implements ActionListener {
         System.out.println("Hello");
     }
 }
+
 interface ActionListener{
     public void actionPerformed();
 }
