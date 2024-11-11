@@ -12,12 +12,10 @@ class Test1_1 extends JFrame{
     private JButton jbt =new JButton("点我");
     private JPanel jpl = new JPanel();
 
-    void Test1_1() {
+    Test1_1() {
         jbt.addActionListener(new Printer1());
-        jbt.setSize(100,100);
-        jpl.add(jbt);
-        jpl.setSize(300,500);
         this.add(jpl);
+        jpl.add(jbt);
         this.setSize(400,300);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }

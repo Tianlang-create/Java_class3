@@ -9,7 +9,7 @@ class Test1 extends JFrame{
     private JButton jbt = new JButton("打印");
     private JPanel jpl = new JPanel();
     public Test1(){
-        jbt.addActionListener(new Printer1()); //③按钮addActionListener绑定对象
+        jbt.addActionListener(new Printer()); //③按钮addActionListener绑定对象
         this.add(jpl);
         jpl.add(jbt);
         this.setSize(400,300);
