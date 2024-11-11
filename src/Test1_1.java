@@ -1,5 +1,4 @@
 //界面上有一个按钮，点击，屏幕上打印“Hello”
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,8 +13,16 @@ class Test1_1 extends JFrame{
     private JPanel jpl = new JPanel();
 
     void Test1_1() {
-
+        jbt.addActionListener(new Printer1());
+        jbt.setSize(100,100);
+        jpl.add(jbt);
+        jpl.setSize(300,500);
         this.add(jpl);
+        this.setSize(400,300);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
 
+    public static void main(String[] args) {
+        new Test1_1().setVisible(true);
     }
 }
